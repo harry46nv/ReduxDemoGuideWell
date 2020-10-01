@@ -1,0 +1,35 @@
+.sideNav_style{
+    padding-top: 5%;
+    box-shadow: -7px -2px 4px 5px grey;
+}
+
+.clicked_Link_Style{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 5% !important;
+    background: #cacaca52;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold
+}
+
+.link_notClicked_style{
+    padding-left: 5%;
+    margin: 20px 0 !important;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.link_notClicked_style:hover{
+    background: #ffffff70;
+    transition: all .25s linear;
+    box-shadow: -0.1em -0.6em 0 #f9f9f933;
+}
