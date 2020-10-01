@@ -1,12 +1,12 @@
 .add_claim_form_style{
-    width: 80%;
+    width: 80% !important;
     background: #ffffff;
     display: flex;
     height: 60%;
     justify-content: space-evenly;
     flex-direction: column;
-    box-shadow: 2px 1px 4px 4px #e5e5e594;
-    border-radius: 6px;
+    box-shadow: 2px 1px 4px 4px #e5e5e594 !important;
+    border-radius: 6px !important;
 }
 
 

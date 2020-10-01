@@ -2,7 +2,7 @@
 import {toast} from "react-toastify"
 const initalState = 
   {
-    claim:[]
+    claims:[]
   }
 ;
 
@@ -11,7 +11,7 @@ const AddClaimReducer = (state = initalState, action) => {
   switch(type){
     case "ADD CLAIM":
     toast("Claim Successfully Submitted")
-    return Object.assign({}, state, { claim: state.claim.concat(payload) });
+    return Object.assign({}, state, { claims: state.claims.concat(payload) });
     default:
     return state
   }

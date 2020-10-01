@@ -4,7 +4,7 @@ import './App.css';
 import AddClaim from "./Containers/AddClaim";
 import ViewClaim from "./Containers/ViewClaim";
 import AddPolicy from "./Containers/AddPolicy";
-import CreatePolicy from "./Containers/CreatePolicy";
+import ViewPolicy from "./Containers/ViewPolicy";
 import {Route, withRouter, Switch} from 'react-router-dom'
 import SideNavBar from "./Containers/SideNavBar"
 import Grid from '@material-ui/core/Grid'
@@ -25,7 +25,7 @@ function App(props) {
      <SideNavBar {...props}/>
      <Grid container  direction='column' style={{width:'90%', height:'100%'}}>
       <Switch>
-      <Route exact path="/viewPolicy" render={()=> <CreatePolicy  />}/>
+      <Route exact path="/viewPolicy" render={()=> <ViewPolicy  />}/>
       <Route exact path="/addPolicy" render={()=> <AddPolicy />}/>
       <Route exact path="/viewClaim" render={()=> <ViewClaim />}/>
       <Route exact path="/addClaim" render={()=> <AddClaim />}/>
