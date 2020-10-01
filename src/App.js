@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import AddClaim from "./Containers/AddClaim";
+import FileClaim from "./Containers/FileClaim";
 import ViewClaim from "./Containers/ViewClaim";
 import AddPolicy from "./Containers/AddPolicy";
 import ViewPolicy from "./Containers/ViewPolicy";
@@ -28,7 +28,7 @@ function App(props) {
       <Route exact path="/viewPolicy" render={()=> <ViewPolicy  />}/>
       <Route exact path="/addPolicy" render={()=> <AddPolicy />}/>
       <Route exact path="/viewClaim" render={()=> <ViewClaim />}/>
-      <Route exact path="/addClaim" render={()=> <AddClaim />}/>
+      <Route exact path="/fileClaim" render={()=> <FileClaim />}/>
       </Switch>
     </Grid>
     </Grid>

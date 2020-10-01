@@ -8,7 +8,7 @@ import './styles.css'
 
 
 
- const AddClaim = () => {
+ const FileClaim = () => {
      const state = useSelector(state=> state)
      
      const dispatch = useDispatch()
@@ -28,10 +28,10 @@ import './styles.css'
     setComponentState({...componentState, [name]:event.target.value})
  }
 
- const submitClaim = () => {
+ const fileClaim = () => {
     
     dispatch({
-        type:"ADD CLAIM",
+        type:"FILE CLAIM",
         payload: componentState
     })
     clearFields()
@@ -39,55 +39,17 @@ import './styles.css'
 
  const clearFields = () => {
     setComponentState({...componentState,
-        providerFirstName:"",
-        providerLastName:"",
-        ptan:"",
-        npi:"",
+      policyId:"",
+      dateOfPolicy:"",
+      description:"",
         beneficiaryFirstName:"",
-        beneficiaryLastName:"",
-        beneficiaryPhoneNumber:"",
-        providerPhoneNumber:""
+        beneficiaryLastName:""
      })
 }
 
   return (
     <form  noValidate autoComplete="off"   className="add_claim_form_core_style">
       <Grid className="add_claim_form_style">
-      <Grid container>
-            <Grid className="claim-details-heading-style"> Provider Details</Grid>
-      <Grid className="add_claim_form_row_style">
-        <TextField
-          id="provider First Name"
-          label="Provider First Name"
-         value={componentState.providerFirstName}
-         onChange={handleFieldChange("providerFirstName")}
-        />
-        <TextField
-          id="provider Last Name"
-          label="Provider Last Name"
-         value={componentState.providerLastName}
-         onChange={handleFieldChange("providerLastName")}
-        />
-          <TextField
-          id="ptan"
-          label="PTAN"
-         value={componentState.ptan}
-         onChange={handleFieldChange("ptan")}
-        />  
-        <TextField
-        id="npi"
-        label="NPI"
-       value={componentState.npi}
-       onChange={handleFieldChange("npi")}
-      />
-         <TextField
-          id="provider Phone number"
-          label="Provider Phone #"
-         value={componentState.providerPhoneNumber}
-         onChange={handleFieldChange("providerPhoneNumber")}
-        />
-        </Grid>
-        </Grid>
         <Grid container>
         <Grid className="claim-details-heading-style">Beneficiary Details</Grid>
       <Grid className="add_claim_form_row_style">
@@ -105,16 +67,16 @@ import './styles.css'
         />
        
          <TextField
-          id="Beneficiary Phone number"
-          label="Beneficiary Phone #"
-         value={componentState.beneficiaryPhoneNumber}
-         onChange={handleFieldChange("beneficiaryPhoneNumber")}
+          id="policyId"
+          label="Policy ID"
+         value={componentState.policyId}
+         onChange={handleFieldChange("policyId")}
         />
         </Grid>
       </Grid>
-      <Grid container className=" form-buttons-container-style">
+      <Grid container className="form-buttons-container-style">
       <Grid item onClick={clearFields} className="form-buttons-style clear-Button-style">CLEAR</Grid>
-      <Grid item onClick={submitClaim} className="form-buttons-style submit-Button-style">ADD CLAIM</Grid>
+      <Grid item onClick={fileClaim} className="form-buttons-style submit-Button-style">FILE CLAIM</Grid>
       </Grid>
       </Grid>
      
@@ -122,4 +84,4 @@ import './styles.css'
   );
 }
 
-export default AddClaim
+export default FileClaim

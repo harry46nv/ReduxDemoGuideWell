@@ -6,3 +6,20 @@
 height:100%;
 width:100%
 }
+
+.tableRow-style{
+    display: flex !important;
+}
+
+.cell-style{
+    padding: 5px;
+    line-height: 0.5;
+    display: flex !important;
+}
+
+.headerCell-style{
+    background-color: #c0c0c0 !important;
+    color: white !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+}

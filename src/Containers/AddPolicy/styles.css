@@ -1,0 +1,59 @@
+.add_claim_form_style{
+    width: 80% !important;
+    background: #ffffff;
+    display: flex;
+    height: 60%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-shadow: 2px 1px 4px 4px #e5e5e594 !important;
+    border-radius: 6px !important;
+}
+
+
+
+.add_claim_form_core_style{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add_claim_form_row_style{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3em;
+}
+
+.submit-Button-style{
+    color: white;
+    background: #0d6eff;
+    
+
+}
+
+.claim-details-heading-style{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 1%;
+}
+
+
+
+.clear-Button-style{
+
+    background: #e6e3e3;
+}
+
+.form-buttons-container-style{
+    justify-content: space-around;
+}
+
+.form-buttons-style{
+    padding: 10px 20px;
+    box-shadow: 2px 3px 4px 1px #d0d0d0;
+    border-radius: 4px;
+    cursor: pointer
+}

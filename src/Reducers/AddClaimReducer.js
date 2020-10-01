@@ -9,7 +9,7 @@ const initalState =
 const AddClaimReducer = (state = initalState, action) => {
   const { type, payload } = action;
   switch(type){
-    case "ADD CLAIM":
+    case "FILE CLAIM":
     toast("Claim Successfully Submitted")
     return Object.assign({}, state, { claims: state.claims.concat(payload) });
     default:

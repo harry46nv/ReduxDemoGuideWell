@@ -7,8 +7,8 @@ import './styles.css'
 const SideNavBar = (props) => {
     const navigateToRoute = route => {
         switch(route){
-            case "Add Claim":
-            props.history.push("/addClaim")
+            case "File a Claim":
+            props.history.push("/fileClaim")
             break;
             case "View Claims":
             props.history.push("/viewClaim")
@@ -27,10 +27,10 @@ const SideNavBar = (props) => {
 
 
     return <Grid className="sideNav_style" container style={{width:'10%', height:'100%'}}  direction='column'>
-<Grid item onClick={e=> navigateToRoute("Add Claim")} className={props.location.pathname === "/addClaim" ? "clicked_Link_Style" : "link_notClicked_style"}>Add Claim</Grid>
-<Grid item  onClick={e=> navigateToRoute("View Claims")} className={props.location.pathname === "/viewClaim" ? "clicked_Link_Style" : "link_notClicked_style"}>View Claim(s)</Grid>
 <Grid item  onClick={e=> navigateToRoute("Add Policy")} className={props.location.pathname === "/addPolicy" ? "clicked_Link_Style" : "link_notClicked_style"}>Add Policy</Grid>
 <Grid item  onClick={e=> navigateToRoute("View Policy")} className={props.location.pathname === "/viewPolicy" ? "clicked_Link_Style" : "link_notClicked_style"}>View Policy(s)</Grid>
+<Grid item onClick={e=> navigateToRoute("File a Claim")} className={props.location.pathname === "/fileClaim" ? "clicked_Link_Style" : "link_notClicked_style"}>File Claim</Grid>
+<Grid item  onClick={e=> navigateToRoute("View Claims")} className={props.location.pathname === "/viewClaim" ? "clicked_Link_Style" : "link_notClicked_style"}>View Claim(s)</Grid>
         </Grid>
 }
 
